@@ -152,45 +152,84 @@ body{
   color:black;
 }
 
-.projects-grid{
+body{
+  margin:0;
+  background:#020617;
+  font-family:Arial;
+  color:white;
+}
+
+.projects{
+  padding:60px 8%;
+}
+
+.title{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:30px;
+}
+
+.filters{
+  text-align:center;
+  margin-bottom:30px;
+}
+.filter{
+  padding:10px 18px;
+  border:none;
+  border-radius:12px;
+  margin:0 6px;
+  background:#1e293b;
+  color:white;
+}
+.filter.active{
+  background:#facc15;
+  color:black;
+}
+
+.cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:25px;
 }
 
-.project-card{
+.card{
   background:#020617;
   border-radius:20px;
   padding:15px;
+  position:relative;
   box-shadow:0 0 0 3px #0f172a;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 0 3px #38bdf8;
 }
 
-.project-preview{
-  height:160px;
+.card-top{
+  height:140px;
   border-radius:14px;
-  margin-bottom:15px;
-  position:relative;
+  margin-bottom:12px;
 }
 .blue{background:#3b82f6;}
 .purple{background:#8b5cf6;}
 .green{background:#22c55e;}
 
-.badge{
+.status{
   position:absolute;
-  top:10px;
-  right:10px;
+  top:15px;
+  right:15px;
   padding:4px 10px;
   border-radius:6px;
   font-size:12px;
 }
-.completed{background:#22c55e;color:black;}
-.prototype{background:#c084fc;color:black;}
+.complete{background:#22c55e;color:black;}
+.proto{background:#c084fc;color:black;}
 
-.project-card h3{
+.card h3{
   color:#60a5fa;
-  margin-bottom:6px;
+  margin:8px 0;
 }
-.project-card p{
+.card p{
   font-size:14px;
   opacity:0.8;
 }
@@ -203,10 +242,10 @@ body{
   padding:4px 10px;
   border-radius:10px;
   font-size:12px;
-  margin-right:5px;
+  margin-right:6px;
 }
 
-.play-btn{
+.card button{
   width:100%;
   padding:10px;
   border:none;
@@ -215,30 +254,11 @@ body{
   color:white;
   margin-top:10px;
 }
-.code-btn{
-  width:100%;
-  padding:10px;
-  border:none;
-  border-radius:12px;
-  background:#334155;
-  color:white;
-  margin-top:10px;
-}
 
-.show-more{
-  display:block;
-  margin:40px auto 0;
-  padding:12px 25px;
-  border-radius:14px;
-  background:#020617;
-  color:white;
-  border:2px solid #111827;
-}
-
-/* Responsive */
 @media(max-width:900px){
-  .projects-grid{
+  .cards{
     grid-template-columns:1fr;
   }
 }
+
 
