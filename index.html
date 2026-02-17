@@ -297,61 +297,71 @@ h2{
 
 </section>
 
-  <section class="projects-section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <div class="projects-header">
-    <h2>PROJECTS <span>RECENT WORK</span></h2>
-  </div>
+<section class="projects">
 
-  <div class="project-filters">
+  <h2 class="title">RECENT WORK</h2>
+
+  <div class="filters">
     <button class="filter active">ALL</button>
     <button class="filter">PERSONAL</button>
-    <button class="filter">GAME JAM</button>
     <button class="filter">PROFESSIONAL</button>
+    <button class="filter">GAME JAM</button>
   </div>
 
-  <div class="projects-grid">
+  <div class="cards">
 
-    <div class="project-card">
-      <div class="project-preview blue">
-        <span class="badge completed">COMPLETED</span>
-      </div>
+    <div class="card">
+      <div class="card-top blue"></div>
+      <span class="status complete">COMPLETED</span>
       <h3>HONKNAROK</h3>
       <p>Physics based rage game.</p>
       <div class="tags">
-        <span>Godot</span><span>Physics</span><span>Rage Game</span>
+        <span>Godot</span>
+        <span>Physics</span>
+        <span>Rage</span>
       </div>
-      <button class="play-btn">PLAY</button>
+      <button>PLAY</button>
     </div>
 
-    <div class="project-card">
-      <div class="project-preview purple">
-        <span class="badge prototype">PROTOTYPE</span>
-      </div>
+    <div class="card">
+      <div class="card-top purple"></div>
+      <span class="status proto">PROTOTYPE</span>
       <h3>TINY WILDS</h3>
       <p>Evolution sandbox with agents.</p>
       <div class="tags">
-        <span>Godot</span><span>Simulation</span><span>AI</span>
+        <span>Simulation</span>
+        <span>AI</span>
       </div>
+      <button>VIEW</button>
     </div>
 
-    <div class="project-card">
-      <div class="project-preview green">
-        <span class="badge prototype">PROTOTYPE</span>
-      </div>
-      <h3>UNITY TACTICAL GRID</h3>
+    <div class="card">
+      <div class="card-top green"></div>
+      <span class="status proto">PROTOTYPE</span>
+      <h3>UNITY GRID</h3>
       <p>Turn based tactical prototype.</p>
       <div class="tags">
-        <span>Unity</span><span>Pathfinding</span><span>Grid</span>
+        <span>Unity</span>
+        <span>Pathfinding</span>
       </div>
-      <button class="code-btn">CODE</button>
+      <button>CODE</button>
     </div>
 
   </div>
 
-  <button class="show-more">SHOW MORE (6)</button>
-
 </section>
+
+</body>
+</html>
 
 
 
