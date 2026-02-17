@@ -239,4 +239,118 @@ body{
   color:white;
   cursor:pointer;
 }
+.projects-section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.section-title{
+  font-size:40px;
+}
+.section-title span{
+  font-size:14px;
+  color:orange;
+  margin-left:10px;
+}
+
+.project-filters{
+  margin:30px 0;
+}
+.project-filters button{
+  padding:10px 20px;
+  border-radius:12px;
+  background:#111827;
+  color:white;
+  border:1px solid #333;
+  margin:0 5px;
+}
+.project-filters .active{
+  background:#facc15;
+  color:black;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.project-card{
+  background:#020617;
+  padding:15px;
+  border-radius:20px;
+}
+.project-card img{
+  width:100%;
+  border-radius:15px;
+}
+.project-card h3{
+  margin:15px 0;
+}
+.project-card p{
+  opacity:0.7;
+}
+.play-btn{
+  margin-top:15px;
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  background:#fb7185;
+  border:none;
+}
+.show-more{
+  margin-top:40px;
+  padding:12px 25px;
+  border-radius:12px;
+}
+.doodles-section{
+  padding:80px 10%;
+}
+.doodle-board{
+  background:#020617;
+  height:400px;
+  border-radius:20px;
+  position:relative;
+}
+.doodle{
+  position:absolute;
+  width:150px;
+  background:white;
+  padding:10px;
+  transform:rotate(-5deg);
+}
+.doodle img{
+  width:100%;
+}
+.doodle:nth-child(1){ top:50px; left:100px;}
+.doodle:nth-child(2){ top:200px; left:400px;}
+.doodle:nth-child(3){ top:100px; left:700px;}
+.contact-section{
+  padding:100px 10%;
+}
+.contact-wrapper{
+  display:flex;
+  justify-content:space-between;
+  gap:50px;
+}
+.contact-left{
+  width:45%;
+}
+.contact-right{
+  width:45%;
+  background:#fde047;
+  padding:20px;
+  border-radius:10px;
+}
+.contact-right input,
+.contact-right textarea{
+  width:100%;
+  margin-bottom:10px;
+  padding:10px;
+}
+.send-btn{
+  background:orange;
+  padding:10px 20px;
+  border:none;
+}
 
