@@ -336,7 +336,7 @@ footer {
 }
 
 .project-card {
-    background: #1f1f1f;
+    background: #0f172a;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
