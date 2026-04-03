@@ -68,13 +68,12 @@ body{
   position:absolute;
   bottom:0;
   width:100%;
-  background:#020617;
+  background:rgba(2,6,23,0.7); /* transparent look 🔥 */
   padding:10px;
   display:flex;
   justify-content:space-between;
   font-size:12px;
 }
-
 /* TEXT CONTENT */
 .content{max-width:500px;}
 .content h4{color:#fb923c;}
